@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 1vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 7vw;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+    margin: 2vw;
+}
+
+.card:first-of-type {
+    background-color: salmon;
+    border: 1px solid black;
+    /* transition-property: background-color, border;
+    transition-duration: 5s, 1s; */
+    transition: background-color 5s, border 1s;
+}
+
+.card:first-of-type:hover {
+    background-color: blue;
+    border: 5px double brown;
+}
+
+
+.card:nth-of-type(2) {
+    background-color: orange;
+    border-radius: 0;
+    transition-property: border-radius;
+    transition-duration: 2s;
+    transition-delay: 1s;
+}
+
+.card:nth-of-type(2):hover {
+    background-color: orange;
+    border-radius: 100%;
+}
+
+
+.card:nth-of-type(3) {
+    background-color: brown;
+    transition-property: transform, background-color;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+
+.card:nth-of-type(3):hover {
+    background-color: violet;
+    transform: rotate(360deg) translate(50px);
+}
+
+
+.card:nth-of-type(4) {
+    background-color: violet;
+}
+
+.card:nth-of-type(5) {
+    background-color: gray;
+}
+
+.card:last-of-type {
+    background-color: green;
+}
+

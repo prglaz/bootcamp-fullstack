@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.imagen-de-fondo,
+.imagen-de-fondo2,
+.color-gradiente-de-fondo {
+    height: 50vh;
+    width: 100vw;
+    padding: 2vw;
+    color: white;
+}
+
+.imagen-de-fondo {
+    background-image: url("../images/img02.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-clip: content-box; */
+
+}
+
+.imagen-de-fondo2 {
+    background-image: url("../images/img03.png"), url(../images/img04.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, cover;
+    background-position: left center, center center;
+    background-blend-mode: soft-light, normal; /* tiene que ser con foto en formato PNG con fondo transparente */
+}
+
+.color-gradiente-de-fondo {
+    background-image: linear-gradient(to right, black, gray, rgba(125, 5, 5, 0.5) 90%);
+    /* background-image: linear-gradient(215deg, black, gray, brown 90%); */
+    /* background-image: radial-gradient(black, gray 90%); */
+    /* background-image: conic-gradient(black, gray 90%); */
+    /* background-image: repeating-radial-gradient(black, gray 10%); */
+    /* background-image: repeating-linear-gradient(black, gray 30%); */
+}
+
+/* main {
+    background-color: blue;
+} */
+
+.imagen-estatica-de-fondo {
+    height: fit-content;
+    width: 100vw;
+    background-image: url("../images/img01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.imagen-estatica-de-fondo section article {
+    padding: 2vw;
+    color: white;
+}

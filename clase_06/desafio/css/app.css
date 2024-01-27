@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url("https://img.freepik.com/foto-gratis/pastel-chocolate-chispitas-chocolate_144627-8998.jpg?w=740&t=st=1692924232~exp=1692924832~hmac=e423835a35204e98cc4fb7e3b90385e2a769f8c2047e47b767c89801c1c7c847");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header{
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-decoration: underline solid;
+    text-transform: uppercase;
+    background-color: #795548;
+}
+
+section {
+    padding: 10px;
+}
+
+article {
+    background-color: rgba(215,204,200,0.8);
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 3% / 7%;
+    margin-bottom: 2%;
+}
+
+footer {
+    text-align: center
+}
+
+.logo {
+    width: 3em;
+    height: fit-content;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-top: 2em;
+    
+}
+
+.titulo-principal {
+    font-family: 'Bungee', cursive;
+    font-size: 3em;
+    padding: 0.2em;
+}
+
+.subtitulo-primario {
+    font-size: 2em;
+    color: #795548;
+}
+
+.subtitulo-secundario {
+    font-size: 2em;
+    color: #795548;
+}
+
+.articulo-destacado {
+    border: 5px double brown;
+}
+
+.articulo-destacado:hover {
+    background-color: rgb(215, 204, 200);
+}

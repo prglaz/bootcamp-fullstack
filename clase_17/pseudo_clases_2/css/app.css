@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"]:checked+label,
+option:checked {
+    color: red;
+}
+
+.parrafo {
+    height: 50px;
+    width: 100%;
+    margin: 5px;
+    background-color: beige;
+}
+
+.parrafo:empty {
+    background-color: aqua;
+}
+

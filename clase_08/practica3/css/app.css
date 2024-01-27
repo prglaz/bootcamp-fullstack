@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 50vh;
+    width: 20%;
+    margin-bottom: 1vw;
+    border: 1px solid black;
+    color: white;
+    background-color: brown;
+}
+
+footer {
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+@media (max-width: 1200px) and (min-width: 993px) { /* NO ES NECESARIO USAR LOS MIN-WIDTH EN ESTOS CASOS, PERO ASI SE ASEGURA QUE SE TOME BIEN. SINO HAY QUE ASEGURARSE QUE ESTEN LOS MEDIA QUERY EN ORDEN */
+    .card {
+        font-size: 1.2em;
+        background-color: beige;
+        width: 25%;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+    .card {
+        font-size: 1.2em;
+        background-color: green;
+        width: 33%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .card {
+        font-size: 1.3em;
+        background-color: blue;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        font-size: 1.5em;
+        background-color: black;
+        width: 100%;
+    }
+}

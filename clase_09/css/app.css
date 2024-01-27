@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("../images/img01.jpg");
+    background-size: 100%;
+    background-position: center;
+}
+
+header h1,
+header h2 {
+    color: white;
+    text-align: right;
+}
+
+.card {
+    background-color: rgba(230,230,230,0.4);
+    color: white;
+    height: 20vh;
+    width: 20vw;
+    border: 1px solid black;
+}
+
+.card-text p {
+    font-family: 'Dancing Script', cursive;
+}
+
+.contenedor {
+    display: flex;
+}
+
+aside {
+    order: 1;
+    width: 25%;
+}
+
+main {
+    order: 2;
+    background-image: url("../images/img01.jpg");
+    background-size: 100%;
+    background-position: center;
+}
+
+.label {
+    color: white;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: beige; */
+    gap: 1vw;
+    padding: 1vw;
+    /* align-items: ; */
+    /* height: 90vh; */
+    /* justify-content: space-evenly; */
+    /* align-content: space-evenly; */
+    /* justify-content: space-evenly; */
+    
+}
+
+@media (max-width: 992px) {
+
+    /* tres columnas */
+    .galeria {
+        gap: 1%;
+        padding: 1vw;
+    }
+
+    .card {
+        width: 32.5%;
+        /* margin-bottom: 2vw; */
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* dos columnas */
+    .galeria {
+        gap: 2vw;
+        padding: 2vw;
+    }
+
+    .card {
+        width: 48%;
+        /* margin-bottom: 1vw; */
+    }
+
+    /* #id-card1 {
+        width: 40%;
+    } */
+}
+
+@media (max-width: 370px) {
+
+    /* una columna */
+    .contenedor {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .galeria {
+        gap: 3vw;
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        /* margin-bottom: 3vw; */
+    }
+}

@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+
+dl {
+    margin-bottom: 2em;
+    margin-left: 2em;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border: 2px solid black;
+    width: fit-content;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 1.1em;
+    color:brown;
+    font-style: oblique;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+dd {
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    font-family: cursive;
+}
+
+dt::after {
+    content: ": ";
+}
+
+

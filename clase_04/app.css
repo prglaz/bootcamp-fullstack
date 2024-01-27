@@ -1,0 +1,64 @@
+/* Pseudo-Clases */
+a:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:active {
+    background-color: lightgrey;
+}
+
+a:link {
+    color: green;
+    text-decoration: none;
+}
+
+h1:active {
+    background-color: lightgrey;
+}
+
+h1:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+
+/* BORDES */
+/* subrayar elemento p con border*/
+p {
+    border-bottom: 3px double blue;
+    width: max-content;
+}
+
+div {
+    background-color: beige;
+    border: 1px solid blue;
+    border-top: 2px solid red;
+}
+
+ol {
+    list-style-type: lower-roman;
+    list-style-position: inside;
+}
+
+ul {
+    list-style-image: url("./images/icon-item.png");
+}
+
+/* IMAGENES */
+img {
+    height: auto;
+    width: 250px;
+    border: 2px solid grey;
+    border-radius: 10%;
+}
+
+body {
+    background-image: url(./images/gatito.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

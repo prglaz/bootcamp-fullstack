@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1E898C;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4em;
+    color: #FEE633;
+    text-align: center;
+    margin: 2%;
+}
+
+.seccion {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+img {
+    border: 10px solid white;
+    margin: 5px;
+}
+
+@media (max-length: 1001px) {
+
+}

@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5vw;
+}
+
+iframe {
+    height: 30vh;
+    width: 50vw;
+    padding: 1px;
+    border: 1px solid blue;
+    background-color: gray;
+    border-radius: 1vw;
+}
+
+ul {
+    margin-bottom: 1vw;
+}

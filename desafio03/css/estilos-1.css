@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F32C64;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.encabezado {
+    background-color: #CA255B;
+    text-align: center;
+    font-size: 1.7em;
+    color: white;
+    /* padding-top: 1px;
+    padding-bottom: 1px; */
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-right-style: solid;
+    border-right-width: 5px;
+}
+
+h1 {
+    padding: 1.5%;
+}
+
+.seccion {
+    background-color: #CA255B;
+    border-radius: 5px / 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    padding-top: 1.5%;
+    margin-top: 1%;
+}
+
+h2 {
+    color: white;
+    /* padding-top: 2%; */
+    font-size: 2em;
+}
+
+h3 {
+    text-align: right;
+    color: #972037;
+    border-bottom: 2px dotted black;
+    border-bottom-color: #972037;
+}
+
+.articulo {
+    background-color: white;
+    border-radius: 5px / 5px;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1px;
+    margin-top: 2%;
+}
+
+img {
+    width: 100%;
+    padding-bottom: 1%;
+}
+
+.boton {
+    background-color: green;
+    color: white;
+    border-radius: 5px / 5px;
+    padding: 10px;
+    width: fit-content;
+    text-align: center;
+    /* Para centrarlo es necesario darle un width y que margin-left y margin-right esten en auto */
+    margin-right: auto;
+    margin-left: auto;
+    /* si uso directamente margin: auto me saca el margin de abajo por lo cual uso margin left y right */
+    /* margin: auto; */
+    /* min-width: max-content; */
+}
+
+.boton:hover {
+    background-color: #E32B5F;
+}
+
+a {
+    text-decoration: none;
+}
+
+.piedepagina {
+    background-color: #F76F94;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    border-radius: 5px / 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 2%;
+}
+
+

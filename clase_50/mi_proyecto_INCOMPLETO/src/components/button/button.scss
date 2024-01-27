@@ -1,0 +1,12 @@
+@use "../../styles/scss/variables" as var;
+
+.button {
+    width: 100%;
+    color: var.$colorFontLight !important;
+    background-color: var.$colorBackgroundDark !important;
+
+    &:hover,
+    &:active {
+        background-color: var.$colorBackgroundDarker !important;
+    }
+}

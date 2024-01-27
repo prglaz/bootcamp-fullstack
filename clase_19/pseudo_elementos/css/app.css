@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mi-seccion p:before {
+    content: "hola desde CSS ";
+    color: red;
+    text-shadow: 2px 2px 3px gray;
+}
+
+.mi-seccion p:after {
+    content: " CHAU";
+    color: blue;
+    text-shadow: 2px 2px 3px gray;
+}

@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    width: 50vw;
+    padding: 1vw;
+
+}
+
+.section1 {
+    background-color: beige;
+}
+
+.section2 {
+    background-color: lightblue;
+}
+
+.audio {
+    width: 100%;
+}
+
+.video {
+    width: 100%;
+    border-radius: 1vw / 1vw;
+}

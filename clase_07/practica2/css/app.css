@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor1 {
+    display: flex; /* no es heredable */
+    flex-direction: row;
+    flex-wrap: wrap; /* por defecto es nowrap */
+}
+
+.item {
+    color: white;
+    background-color: brown;
+    border: 1px solid black;
+}
+
+#id-item2 {
+    margin-left: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.contenedor2 {
+    height: 250px;
+    width: 100%;
+    padding: 1px;
+    border: 1px solid black;
+    background-color: beige;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* alinea en el eje principal. Por default: flex-start */
+    align-content: flex-end; /* alinea en el eje transversal. Por default: stretch */
+    align-items: flex-start; /* alinea en el eje transversal. Por default: */
+}
+
+.card {
+    color: white;
+    background-color: brown;
+    border: 1px solid black;
+}
+
+#id-card01 {
+    height: 50px;
+}
+
+#id-card02 {
+    flex-grow: 1;
+    align-self: center;
+    height: 25px;
+}
+
+#id-card03 {
+    height: 75px;
+}
+
+#id-card04 {
+    flex-grow: 2;
+    height: 50px;
+}
+
+#id-card05 {
+    height: 75px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Menu</title>
+    <link rel="stylesheet" href="css/main.css" id="id-css">
+</head>
+
+<body>
+    <header>
+        <h1>Menú - Haga su pedido</h1>
+    </header>
+    <main>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Datos del cliente</legend>
+                    <div>
+                        <div>
+                            <label for="id-nombre">Nombre:*</label>
+                            <input type="text" id="id-nombre" required>
+                        </div>
+
+                        <div>
+                            <label for="id-apellido">Apellido:*</label>
+                            <input type="text" id="id-apellido" required>
+                        </div>
+
+                        <div>
+                            <label for="id-direccion">Dirección de entrega:*</label>
+                            <input type="text" id="id-direccion" required>
+                        </div>
+
+                        <div>
+                            <label for="id-telefono">Telefono:*</label>
+                            <input name="text" id="id-telefono" required>
+                        </div>
+
+                        <div>
+                            <label for="id-mail">E-mail:*</label>
+                            <input name="E-mail" id="id-mail" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Menú</legend>
+                    <div id="id-menu-items"></div>
+                </fieldset>
+                
+                <input type="button" id="btn-procesar_pedido" value="Procesar Pedido"></input>
+            </form>
+        </section>
+    </main>
+
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    font-size: 1.5em;
+    margin: 2vw;
+    border: 1px solid brown;
+    border-collapse: collapse;
+}
+
+th {
+    color: white;
+    background-color: black;
+}
+
+th, td {
+    padding: 1vw;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.codigo {
+    width: 3vw;
+}
+
+.descripcion {
+    text-align: start;
+    width: 35vw;
+}

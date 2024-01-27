@@ -1,0 +1,8 @@
+@use "../../styles/variables" as var;
+
+.footer {
+    grid-area: footer;
+
+    background-color: lightcyan;
+    text-align: center;
+}

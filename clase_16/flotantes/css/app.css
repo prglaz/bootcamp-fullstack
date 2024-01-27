@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.rectangulo1,
+.rectangulo2 {
+    height: 100px;
+    width: 200px;
+    padding: 3px;
+    margin: 3px;
+    border: 2px solid brown;
+    float: left;
+}
+
+.rectangulo2 {
+    float: right;
+}
+
+.articulo-b {
+    height: 300px;
+    width: 300px;
+    background-color: beige;
+    clear: both;
+}
+
+.imagen1 {
+    width: 25%;
+    margin: 2vw 0 0 2vw;
+    float: right;
+}
+
+.imagen2 {
+    width: 25%;
+    margin: 2vw 2vw 0 0;
+    float: left;
+}
+
+.articulo-c {
+    text-align: justify;
+}

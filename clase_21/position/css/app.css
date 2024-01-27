@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+}
+
+.card {
+    height: 200px;
+    width: 200px;
+}
+
+.card:first-of-type {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    background-color: salmon;
+}
+
+.card:nth-of-type(2) {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color: orange;
+}
+
+.card:nth-of-type(3) {
+    position: fixed;
+    top: 8px;
+    left: 15px;
+    background-color: brown;
+}
+
+.card:nth-of-type(4){
+    background-color: yellow;
+}
+
+.card:last-of-type {
+    position: sticky;
+    top: 50px;
+    left: 50px;
+    background-color: lightgreen;
+}

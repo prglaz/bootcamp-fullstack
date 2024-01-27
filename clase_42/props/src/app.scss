@@ -1,0 +1,25 @@
+.title {
+    color: brown;
+    background-color: beige;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+
+    .card {
+        // width: 30%;
+        border: 1px solid black;
+
+        h4 {
+            color: red;
+        }
+
+        .grafico {
+            height: 100px;
+            width: 100%;
+            background-color: red;
+        }
+    }
+}

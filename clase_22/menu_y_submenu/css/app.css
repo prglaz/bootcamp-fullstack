@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    gap: 1vw;
+}
+
+.navbar-item a {
+    display: block;
+    height: 5vh;
+    width: 15vw;
+    padding: 1vw;
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.navbar-item a:hover {
+    background-color: black;
+}
+
+.navbar-item:hover>ul {
+    visibility: visible;
+}
+
+.navbar-item ul {
+    position: absolute;
+    visibility: hidden;
+    /* display: none; */
+}
+
+.navbar-item ul li {
+    position: relative;
+}
+
+.navbar-item ul li ul {
+    top: 0;
+    left: 15vw;
+}
+
+
+
+
+
+
+
+
+
+
+

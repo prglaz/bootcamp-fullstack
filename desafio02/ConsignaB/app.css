@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(225, 254, 252);
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: orangered;
+    font-weight: bold;
+}
+
+div a {
+    color: blue;
+}
+
+div a:visited {
+    color: rgb(191, 34, 34);
+}
+
+nav a {
+    font-size: 20px;
+}
+
+h1 {
+    color: rgb(72, 72, 72);
+}
+
+h2 {
+    color: white;
+    background-color: rgb(72, 72, 72);
+}
+
+
+

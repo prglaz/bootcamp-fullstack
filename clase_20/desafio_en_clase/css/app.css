@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header,
+nav,
+aside,
+main,
+footer {
+    padding: 1vw;
+    border: 1px solid gray;
+    border-radius: 1vw / 1vw;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content max-content auto max-content;
+
+    grid-template-areas:
+        "header  header header"
+        "navbar  navbar navbar"
+        "sidebar main   main"
+        "footer  footer footer";
+
+    gap: 1vw;
+
+}
+
+header {
+    grid-area: header;
+    color: white;
+    background-image: linear-gradient(#73626E, #B38184);
+}
+
+nav {
+    grid-area: navbar;
+    background-color: #B38184;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1vw;
+}
+
+nav ul form {
+    margin-left: auto;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: #f0b49e;
+}
+
+main {
+    grid-area: main;
+    background-color: #f7e4be;
+    overflow: auto;
+}
+
+footer {
+    color: white;
+    grid-area: footer;
+    background-color: #73626E;
+    text-align: center;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); */
+    gap: 0.5vw;
+}
+
+.gallery img {
+    height: fit-content;
+    width: 100%;
+    border-radius: 0.5vw / 0.5vw;
+}
+
+.gallery img:hover {
+    border: 3px solid white;
+    box-shadow: 2px 2px 3px gray;
+}
+
+section {
+    margin: 10px 0;
+}
+
+section h3 {
+    text-shadow: 1px 1px 3px gray;
+}
+
+@media (max-width: 992px) {
+    body {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "header header"
+            "navbar navbar"
+            "sidebar main"
+            "footer footer";
+
+        gap: 1vw;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "navbar"
+            "sidebar"
+            "main"
+            "footer";
+
+        gap: 1vw;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul form {
+        display: flex;
+        margin: 0;
+        width: 100%;
+        gap: 1vw;
+    }
+
+    nav ul form input[type='text'] {
+        width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

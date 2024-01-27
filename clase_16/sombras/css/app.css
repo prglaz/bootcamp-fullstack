@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.articulo {
+    padding: 2vw;
+    margin: 2vw;
+    background-color: beige;
+    box-shadow: 3px 3px 15px inset rgba(0, 0, 0, 0.5), 3px 3px 5px black; /* con inset, es sombra interna. Con la sombra interna, se genera invertida a lo que es la sombra externa. Este ejemplo ademas tiene 2 juegos de sombras (separados con la coma) */
+    /* box-shadow: -3px -3px 5px red, 3px 3px 5px blue; */
+}
+
+.articulo h3 {
+    color: brown;
+    font-size: 2em;
+    /* text-shadow: 3px 3px 15px black;*/ /* para darle sombra a los textos, se usa text-shadow en lugar de box-shadow */
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.6), 15px 15px 2px rgba(125, 5, 5, 0.15);
+    margin-bottom: 15px;
+}
+
+.articulo p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
+
+}
+

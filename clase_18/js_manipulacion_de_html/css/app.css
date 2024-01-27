@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 1em;
+}
+
+.color-rojo {
+    color: red;
+    text-transform: uppercase;
+}
+

@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+
+div {
+    display: grid;
+    width: 600px;
+    height: 400px;
+    grid-template-columns: 100px 300px;
+    grid-template-rows: 120px 60px;
+    gap: 15px 10px;
+    justify-content: space-between;
+    align-content: end;
+    border: 1px dashed blue;
+    padding: 20px;
+}
+
+p {
+    border: 1px solid black;
+    margin: 0;
+}

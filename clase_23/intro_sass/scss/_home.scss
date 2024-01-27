@@ -1,0 +1,29 @@
+@use "./variables" as var;
+@use "./mixins" as mix;
+
+h1 {
+    color: var.$color1;
+}
+
+main {
+    $color3: green; //var local
+
+    .cuadrado1 {
+        background-color: gray;
+        border: 3px solid nth(var.$colores, 2);
+
+        .subtitulo {
+            color: $color3;
+            text-decoration: underline solid black;
+        }
+    }
+
+    .cuadrado2 {
+        @include mix.figure(150px, $color: blue);
+        border-radius: 15px;
+    }
+
+    .cuadrado3 {
+        @include mix.figure(250px, 100px, violet)
+    }
+}

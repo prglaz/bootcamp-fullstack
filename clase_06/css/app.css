@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+@font-face {
+    font-family: "super boys";
+    src: url("../fonts/super-boys.ttf");
+}
+
+.titulo-principal {
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-weight: 1000;
+    font-style: oblique;
+    text-decoration: underline solid;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.subtitulo1 {
+    font-family: 'Tilt Prism', cursive;
+}
+
+.subtitulo2 {
+    font-family: "super boys", cursive;
+}

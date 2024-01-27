@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mi-seccion {
+    padding: 20px;
+    margin: 20px;
+}
+
+.mi-seccion ol {
+    list-style: decimal-leading-zero inside;
+}
+
+.mi-seccion ul {
+    list-style-image: url(../images/icon-item.png);
+    list-style-position: inside;
+}
+
+.mi-seccion p {
+    font-size: 2em;
+    color: blue;
+}
+

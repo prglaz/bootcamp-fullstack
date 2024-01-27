@@ -1,0 +1,68 @@
+/*importa una tipografia externa*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/*importa una tipografia interna*/
+@font-face {
+    font-family: 'Barriecito';
+    src: url(/MI-CURSO-FULLSTACK/clase_03/fonts/Barriecito-Regular.ttf) format("truetype");
+}
+
+* {
+    box-sizing: content-box;
+}
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    background-color: beige;
+    /* font-size: 32px; */
+}
+
+/*selector de etiqueta grupal*/
+h1,
+h2 {
+    color: red;
+    background-color: black;
+    font-family: 'Barriecito', cursive;
+}
+
+p {
+    color: blue;
+}
+
+/*selector de etiqueta descendente*/
+div p {
+    color: black;
+    /* background-color: beige; */
+    /* font-size: 2em; */
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;/*los de la derecha son alternativas por si el primero no lo tiene en el navegador del cliente*/
+    text-decoration: underline dotted;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*selector de etiqueta individual (sobreescrito)*/
+p {
+    color: brown;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    font-size:20px;
+    text-transform:capitalize;
+}
+
+
+div {
+    background-color: brown;
+    /* height: 75px; */
+    height: max-content;
+    width: 30%;
+    min-width: max-content;
+    margin: 1px;
+}
+
+h3 {
+    text-align: right;
+}

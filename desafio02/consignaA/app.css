@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+body {
+    background-color:rgb(31, 50, 50);
+    color: lightblue;
+}
+
+
+h1 {
+    color: rgb(123, 123, 171);
+    background-color: rgb(252, 245, 245);
+    text-align: center;
+    font-size: 3em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+p, h2 {
+    color: rgb(203, 203, 235);
+}
+
+h2 {
+    font-style: italic;
+    font-weight: bolder;
+    font-family: 'Marcellus SC', serif;
+    font-size: bold;
+    text-transform: capitalize;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    border-style:ridge;
+    border-width: 4px;
+    margin-left: 48px;
+    width: 500px;
+    height: auto;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Repaso ejercicio del desafio N°6</h1>
+    <script>
+        //EJERCICIO 1
+        let cantidadDeGatos = 0;
+        let contador = 1;
+        let emoji = "";
+
+            for (let i = 1; i <= cantidadDeGatos; i++) {
+                switch (contador) {
+                    case 1:
+                        emoji = "😺";
+                        contador++;
+                        break;
+                    case 2:
+                        emoji = "😸";
+                        contador++;
+                        break;
+                    default:
+                        emoji = "😹";
+                        contador = 1;
+                }
+                window.document.write("<p>Gato #" + i + ": " + emoji + "</p>");
+            }
+
+
+        //EJERCICIO 2
+        let cantidadDeGatosB = 0;
+        let cantidadDePasosB = 3;
+        for (let i = 1; i <= cantidadDeGatosB; i++) {
+            let pasos = "";
+            
+            for (let j = 0; j < cantidadDePasosB; j++) {
+                pasos += "🐾";
+            }
+            document.write("<p>Gato #" + i + ": 🐈 " + pasos + "</p>");
+        }
+
+        //EJERCICIO 3:
+        let cantidadDeGatosC = 5;
+            let cantidadDePasosC = 3;
+            for (let i = 1; i <= cantidadDeGatosC; i++) {
+                let pasos = "";
+                let animalito = "🐈";
+
+                for (let j = 0; j < cantidadDePasosC; j++) {
+                    pasos += "🐾";
+                }
+
+                if (i%2 === 0) {
+                    animalito = "🐈🐈";
+                }
+                document.write("<p>Gato #" + i + ":" + animalito + pasos + "</p>");
+            }
+    </script>
+</body>
+
+</html>

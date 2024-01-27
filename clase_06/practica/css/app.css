@@ -1,0 +1,32 @@
+.color {
+    color: blue;
+}
+
+h1 {
+    color:red;
+}
+
+.fondo-gris {
+    background-color: grey;
+}
+
+#parrafo1 {
+    border: 1px solid black;
+    color: blueviolet;
+}
+
+.color-hexadecimal {
+    color: #0000ff;
+}
+
+.color-notacion-rgb {
+    color: rgb(255, 0, 0)
+}
+
+div {
+    background-color: black;
+}
+
+.color-notacion-rgba {
+    color: rgba(255, 255, 0, 0.4)
+}

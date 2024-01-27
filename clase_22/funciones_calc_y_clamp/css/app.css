@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+    margin: 1vw;
+}
+
+.card:first-of-type {
+    width: calc(100% - (2vw*2));
+    background-color: salmon;
+}
+
+.card:nth-of-type(2) {
+    /* width: 50%;
+    min-width: 200px; */
+    width: max(50%, 200px);
+    background-color: orange;
+}
+
+.card:nth-of-type(3) {
+    /* width: 50%;
+    max-width: 300px; */
+    width: min(50%, 300px);
+    background-color: brown;
+}
+
+.card:last-of-type {
+    background-color: green;
+    width: clamp(200px, 50%, 300px);
+    font-size: clamp(1rem, 3vw, 24px);
+}
+
+
+

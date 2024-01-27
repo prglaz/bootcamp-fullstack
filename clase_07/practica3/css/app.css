@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    color: white;
+    background-color: #66717e;
+}
+
+.contenedor {
+    display: flex; /* no es heredable */
+    flex-direction: row;
+    padding: 1vw;
+}
+
+aside {
+    width: 15vw;
+    background-color: #32213A;
+    margin-right: 1vw;
+    padding: 1vw;
+}
+
+.filtros {
+    color: white;
+}
+
+main {
+    width: 85vw;
+    background-color: #04D6B9;
+    padding: 1vw;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 25vw;
+    margin-bottom: 1.5vw;
+}
+
+.card-image {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: #04D6B9;
+}

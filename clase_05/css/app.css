@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 5px;
+    color: #4a148c;
+}
+
+form {
+    width: fit-content; /* es como un auto + un min-content */
+    max-width: max-content;
+    padding: 10px;
+    margin: 5px;
+    background-color: #e1bee7;
+    border: 2px groove #4a148c;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    background-color: #f3e5f5;
+    border: px solid #4a148c;
+}
+
+input[type="file"] {
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    min-width: max-content;
+    margin: 5px;
+    color: white;
+    background-color: #4a148c;
+}

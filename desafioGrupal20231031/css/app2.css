@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 5vw;
+}
+
+.car {
+    height: fit-content;
+    width: 180px;
+    position: absolute;
+    top: 33vh;
+
+    animation-name: move;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+    49% {
+        transform: rotateY(0);
+        left: calc(90vw - 180px);
+    }
+    50% {
+        left: calc(90vw - 180px);
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(180deg);
+        left: 0;
+    }
+}
+
+header {
+    background-color: #909090;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header h2 {
+    font-size: 2em;
+}
+
+footer {
+    background-color: #909090;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.img_fondo {
+    background-image: url("../images/4393650_3042.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 90vw;
+    position: relative;
+}
+
+.button-box {
+    margin-top: 18px;
+    background-color: aqua;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.button-box button {
+    height: 25px;
+    width: 44vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    border-radius: 9px;
+    box-shadow: inset 1px 2px 6px #666666ad;
+}

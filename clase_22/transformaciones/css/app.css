@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 1vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 7vw;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+    margin: 2vw;
+}
+
+.card:first-of-type {
+    background-color: salmon;
+    transform: translate(-10px, 20px);
+}
+
+.card:nth-of-type(2) {
+    background-color: orange;
+    transform: scale(1.5,0.5);
+}
+
+.card:nth-of-type(3) {
+    background-color: brown;
+    transform: rotate(45deg);
+    /* transform: rotateX(150deg); */
+    /* transform: rotateY(120deg); */
+}
+
+.card:nth-of-type(4) {
+    background-color: violet;
+    transform: skew(20deg,10deg);
+    /* transform: skewY(20deg); */
+    /* transform: skewX(20deg); */
+}
+
+.card:nth-of-type(5) {
+    background-color: gray;
+    transform: rotate(5deg) rotateX(20deg) rotateY(45deg);
+}
+
+.card:last-of-type {
+    background-color: green;
+    transform: rotate(35deg);
+    transform-origin: 0 0;
+}

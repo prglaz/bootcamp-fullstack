@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi APP</title>
+
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+    <header>
+        <h1>Uso de Tablas</h1>
+    </header>
+
+    <main>
+        <section>
+            <table>
+                <caption>Lista de Precios</caption>
+                <tr>
+                    <th colspan="2">Producto</th>
+                    <th>Color</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td class="codigo">1</td>
+                    <td class="descripcion">Remera</td>
+                    <td>Rojo</td>
+                    <td>$2500,00</td>
+                </tr>
+                <tr>
+                    <td class="codigo">2</td>
+                    <td class="descripcion">Pantalón</td>
+                    <td>Azul</td>
+                    <td>$7500,00</td>
+                </tr>
+                <tr>
+                    <td class="codigo" rowspan="2">3</td>
+                    <td class="descripcion" rowspan="2">Zapatillas</td>
+                    <td>Blanco</td>
+                    <td>$5500,00</td>
+                </tr>
+                <tr>
+                    <td>Negro</td>
+                    <td>$6000,00</td>
+                </tr>
+                <tr>
+                    <td class="codigo">4</td>
+                    <td class="descripcion">Campera</td>
+                    <td>Azul</td>
+                    <td>$15500,00</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2023</p>
+    </footer>
+</body>
+</html>

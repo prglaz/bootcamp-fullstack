@@ -1,0 +1,36 @@
+@use "./variables" as var;
+@use "./mixins" as mix;
+
+.home {
+    .cover {
+        margin: 2vw;
+
+        .cover__title1:hover+p {
+            color: var.$colorPrimary;
+        }
+
+        .cover__title2:hover~p {
+            color: var.$colorPrimary;
+        }
+
+        .cover__image {
+            width: 100px;
+
+            &:hover {
+                border: 2px solid blue;
+            }
+        }
+        
+        >div {
+            height: 60px;
+            width: 120px;
+            padding: 3vw;
+            background-color: blue;
+        }
+    }
+
+    .shape {
+        @include mix.figura("rectangulo");
+        @include mix.color(3);
+    }
+}

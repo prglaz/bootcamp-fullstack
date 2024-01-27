@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/app.css">
+    <title>Ejercitación</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercitación</h1>
+    </header>
+
+    <main>
+        <section id="id-section1">
+            <form action="#" method="post">
+                <div>
+                    <label for="id-numero1">Primer numero</label>
+                    <input type="number" name="numero1" id="id-numero1" min="0" max="100">
+                    <label for="id-numero2">Segundo numero</label>
+                    <input type="number" name="numero2" id="id-numero2" min="0" max="100">
+                </div>
+                <div>
+                    <input type="radio" name="operacion" id="id-suma">
+                    <label for="id-suma">SUMA</label>
+                    <input type="radio" name="operacion" id="id-resta">
+                    <label for="id-resta">RESTA</label>
+                    <input type="radio" name="operacion" id="id-multiplicacion">
+                    <label for="id-multiplicacion">MULTIPLICACION</label>
+                    <input type="radio" name="operacion" id="id-division">
+                    <label for="id-division">DIVISION</label>
+                </div>
+            </form>
+            <div>
+                <button id="id-calcular">Calcular</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

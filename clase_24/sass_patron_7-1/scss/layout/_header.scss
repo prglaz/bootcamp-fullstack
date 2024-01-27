@@ -1,0 +1,22 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+
+.header {
+    .header__title {
+        color: var.$colorSuccess;
+    }
+
+    // .header__subtitle {
+
+    // }
+}
+
+// .headerTV {}
+
+// .headerMobile {
+//     @media {
+
+//     }
+// }
+

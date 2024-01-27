@@ -1,0 +1,9 @@
+$color1: brown; //var global
+$color2: violet;
+$colores: (
+    red,
+    green,
+    blue
+); //var de multiple valor
+
+$_color4: red; //var privada: solo se podria usar aca, no se puede usar cuando se importa en otra parte
