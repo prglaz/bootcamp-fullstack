@@ -22,6 +22,7 @@ const App = () => {
 
     const handleOnChangeNewColor = (e) => {
         setInputNewColor(e.target.value);
+        console.log(inputNewColor);
     };
 
     const handleOnClickAddColor = () => {

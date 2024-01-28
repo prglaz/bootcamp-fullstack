@@ -6,39 +6,37 @@ import "./climaCiudad.scss";
 const ClimaCiudad = () => {
 
     const [temp, setTemp] = useState();
-    const [city, setCity] = useState();
-    let aux = 0;
+    const [inputCity, setInputCity] = useState("");
+    const [cityToSearch, setCityToSearch] = useState("");
 
     // https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=0e9433324d341cd2833880497c105c58
     const URL_API = "https://api.openweathermap.org/data/2.5/weather";
 
     const params = new URLSearchParams({
-        q: "Buenos Aires",
+        q: cityToSearch,
         units: "metric",
         appid: "0e9433324d341cd2833880497c105c58",
     });
 
-    const handleOnChangeCity = (e) => {
+    const handleOnChangeInputCity = (e) => {
         // Actualiza el valor de input mientras se escribe
-        setCity(e.target.value);
-        console.log("ciudad: ", e);
+        setInputCity(e.target.value);
     };
 
     useEffect(() => {
-        fetch(`${URL_API}?${params}`)
-            .then((response) => response.json())
-            .then((data) => setTemp(data.results));
-        // axios.get(`${URL_API}?${params}`, {})
-        //     .then((response) => {
-        //         console.log(response.data.results);
-        //         setTemp(response.data.results);
-        //     });
-    }, [city]);
+        if (cityToSearch != "") {
+            fetch(`${URL_API}?${params}`)
+                .then((response) => response.json())
+                .then((data) => setTemp(data.main["temp"]));
+        }
+        else {
+            setTemp("");
+        }
+    }, [cityToSearch]);
 
-    const handleOnClickGetTemp = () => {
-        aux += 1;
-        setCity(aux);
-        console.log(temp);
+    const handleOnClickGetTemp = (e) => {
+        e.preventDefault();
+        setCityToSearch(inputCity);
     };
 
     return (
@@ -46,16 +44,21 @@ const ClimaCiudad = () => {
             <main>
                 <h1>Temperatura</h1>
                 <div>
-                    <input
-                        type="text"
-                        id="c"
-                        // value={city}
-                        // on={(e) => handleOnChangeCity(e)}
-                        required />
-                    <button onClick={(e) => handleOnChangeCity(e)}>Obtener temperatura</button>
+                    <form>
+                        <input
+                            type="text"
+                            id="City"
+                            value={inputCity}
+                            onChange={(e) => handleOnChangeInputCity(e)}
+                            required />
+                        <button onClick={(e) => handleOnClickGetTemp(e)}>Obtener temperatura</button>
+                    </form>
                 </div>
+
                 <div>
-                    <p>{`${temp}`}</p>
+                    {(temp) && <p>Temperatura: {temp}</p>}
+                    {(temp && temp > 30) && <span className="warm">¡Hace mucho calor!</span>}
+                    {(temp && temp < 10) && <span className="cold">¡Hace mucho frío!</span>}
                 </div>
             </main>
         </>
